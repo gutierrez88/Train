@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Train Schedule</title>
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron border border-primary mb-4">
+                <div class="container">
+                    <h1 class="display-4 text-center">Trains, Trains, Trains!</h1>
+                    <p class="lead text-center">I get a Train, You get a Train, Everyone gets a Train!</p>
+                </div>
+            </div>  
+
+            <div class="border border-primary bg-primary text-white p-2 rounded-top">
+                    <lable>Current Train Schedule</lable>
+            </div>
+            <div class="rounded-bottom border border-primary mb-4 p-2" id="info">
+            </div>
+
+            <div class="border border-primary bg-primary text-white p-2 rounded-top">
+                <lable>Add Train</lable>
+            </div>
+            <form class="border border-primary p-2 rounded-bottom mb-4">
+                    
+                    <div class="form-group">
+                      <label for="name">Train Name</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstTime">First Train Time (HH:mm - Military Time)</label>
+                        <input type="text" class="form-control" id="firstTime">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="freq">Freqency (min)</label>
+                        <input type="text" class="form-control" id="freq">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+            
+            <script type="text/javascript" src="assets/javascript/train.js"></script>
+        
+        </div>
+    </body>
+</html>
