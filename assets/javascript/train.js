@@ -54,7 +54,7 @@ $("#go").on("click", function(e){
 function currentTime(){
     var curTime = moment().format("hh:mma");
     $("#showTime").html("Current Time "+curTime);
-    setTimeout(currentTime, 30000);
+    setTimeout(currentTime, 60000);
 };
 
 database.ref().on("child_added", function (childInfo){
